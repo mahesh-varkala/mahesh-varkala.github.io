@@ -27,7 +27,6 @@ body {
 }
 
 .Tabs {
-  
 }
 
 .Tab {
@@ -120,8 +119,12 @@ h1 {
 }
 
 .Icon {
-  font-size: 30px;
+  font-size: 40px;
   margin-right: 40px;
+}
+
+.Icon>a {
+  color: black;
 }
 
 .Link {
