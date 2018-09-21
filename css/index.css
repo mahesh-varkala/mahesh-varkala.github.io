@@ -74,6 +74,12 @@ h1 {
   text-align: center;
   padding-top: 50px;
 }
+
+h3{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .img {
   display: block;
   border-radius: 50%;
@@ -131,4 +137,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  margin-top: 50px; 
 }
+
+.Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40;
+  font-weight: 500;
+}
+
+.List {
+  display: table;
+  margin: 0 auto;
+  font-size: 40;
+  font-weight: 500; 
+}
+
