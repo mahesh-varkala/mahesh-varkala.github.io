@@ -1,7 +1,8 @@
 body {
-  background: rgb(180, 168, 111);  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #E6DADA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0px;  
 }
 .App {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
@@ -11,80 +12,114 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222;
-  height: 40px;
-  padding: 20px;
-  vertical-align: center;
+  background: #E6DADA;  /* same os of body background */
+  background: -webkit-linear-gradient(to right, #274046, #E6DADA);
+  background: linear-gradient(to right, #274046, #E6DADA);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
 }
-
+  
 .Name {
-  font-size: 40px;
-  color: white;
+  display: flex;
   flex: 1;
-  /* background-color: blue; */
-  height: 40px;
-  /* vertical-align: center; */
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+  padding-left: 40px;
+
 }
 
-.Tabs {
-}
-
-.Tab {
-  background-color: #222;
-  border: 1px solid #222;
-  color: white;
-  font-size: 20px;
+.AllButtons {
+  display: flex;
+  padding-right: 10px;;
   height: 50px;
-  padding: 10px 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.AllButtons>a {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.NavButton {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  padding: 12px 20px;
   /* transition-duration: 0.4 s; */
   cursor: pointer;
 }
 
-.Tab:hover {
-  background-color: rgb(189, 171, 84); 
+.NavButton:hover {
+  background-color: black; 
   color: white;
 }
 
-button:focus {outline:0};
+a:focus {outline:0};
 
 #home {
-  height: 1000px;
+	height: 100vh;
 }
 
 #profile {
-  height: 1000px;
+	height: 100vh;
 }
 
 #education {
-  height: 1000px;
+	height: 100vh;
 }
 
 #abilities {
-  height: 1000px;
+	height: 100vh;
 }
 
 #contact {
-  height: 1000px;
+  height: 100vh;
 }
-.Image {
+
+/* .Image {
   height: 720px;
   width: 1348px;
+} */
+
+.Page {
+  padding-top: 120px;
+  height: 100vh;
 }
+
+.Page>h1 {
+  text-align: center;
+  /* background-color: aqua; */
+}
+
 h1 {
   text-align: center;
-  padding-top: 50px;
+}
+
+h2{
+  text-align: center;
 }
 
 h3 {
   text-align: center;
-  padding-bottom: 30px;
+
 }
 
 hr {
   border-color: black;
   width: 800px;
-  margin-top: 100px;
-  margin-bottom:20px;
 }
 
 .img {
@@ -132,12 +167,16 @@ hr {
 }
 
 .Icon {
+  justify-content: center;
+  align-items: center;
   font-size: 40px;
-  margin-right: 40px;
+  margin: 40px;
+  /* background-color: blue; */
 }
 
 .Icon>a {
   color: black;
+  align-self: center;
 }
 
 .Link {
@@ -146,6 +185,7 @@ hr {
   align-items: center;
   height: 40px;
   margin-top: 50px; 
+  /* background-color: rgb(238, 12, 117) */
 }
 
 .Text {
@@ -163,3 +203,31 @@ hr {
   font-weight: 500; 
 }
 
+.List>li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.Resume {
+  text-align: center;
+  margin: 100px;
+}
+
+.ResumeButton {
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  border-color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ResumeButton:hover {
+  background-color: black;
+  color: white;
+}
+.mahesh {
+  margin: 0;
+  vertical-align: middle;
+
+}
