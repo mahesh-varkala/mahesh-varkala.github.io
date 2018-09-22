@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="css/favicon/favicon.ico" />
+    <script src="js/index.js"></script>
+
 </head>
 
 <body>
@@ -14,20 +16,25 @@
 
         <header class="Navigation-bar">
             <div class="Name">Mahesh Varkala</div>
-            <div class="Tabs">
-                <button class="Tab">Home</button>
-                <button class="Tab">Profile</button>
-                <button class="Tab">Education</button>
-                <button class="Tab">Abilities</button>
-                <button class="Tab">Contact</button>
+            <div class="AllButtons">
+                <a class="NavButton" href="#home">Home</a>
+                <a class="NavButton" href="#profile">Profile</a>
+                <a class="NavButton" href="#education">Education</a>
+                <a class="NavButton" href="#abilities">Abilities</a>
+                <a class="NavButton" href="#contact">Contact</a>
             </div>
         </header>
 
+        <!----------------------Home-------------------->
+
+        <div class="Page" id="home">
+            <h1>Home</h1>
+        </div>
+
         <!--------------------Profile-------------------->
 
-        <div class="Hor">
+        <div class="Hor" id="profile">
             <div class="HL">
-                <h1>Profile</h1>
                 <img src="img/profile.jpg" class="img" />
             </div>
             <div class="HR">
@@ -44,8 +51,9 @@
 
         <!--------------------Education-------------------->
 
-        <div>
-            <h1>CVR College of Engineering</h1>
+        <div class="Page" id="education">
+            <h1>Education</h1>
+            <h2>CVR College of Engineering</h2>
             <h3>Information Technology( 2014-'18)</h2>
                 <p class="Text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
@@ -63,13 +71,13 @@
 
         <!--------------------Abilities-------------------->
 
-        <div>
+        <div class="Page" id="abilities">
             <h1>Skills</h1>
             <div class="List">
-                <li>Java</li>
-                <li>SQL</li>
                 <li>React Native</li>
                 <li>ReactJS</li>
+                <li>Java</li>
+                <li>SQL</li>
                 <li>C/C++</li>
                 <li>Redux</li>
                 <li>Node.js</li>
@@ -79,7 +87,7 @@
 
         <!---------------------Contact--------------------->
 
-        <div>
+        <div class="Page" id="contact">
             <h1>Contact</h1>
             <div class="Link">
                 <div onClick=window.open('https://www.linkedin.com/in/maheshvarkala') class="Icon">
@@ -94,6 +102,9 @@
                     <i class="fa fa-github-square"></i>
                 </div>
             </div>
+            <form method="get" action="downloads/Resume_MaheshVarkala.docx" class="Resume">
+                <button class="ResumeButton" type="submit">Resume</button>
+            </form>
         </div>
     </div>
 </body>
